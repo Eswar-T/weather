@@ -2,37 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: orange !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerView {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin-top: 10px;
+ justify-content: center;
+ align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputView{
+ width: 200px;
+ height: 40px;
+ border: 1px solid orange;
+ margin-left: 30px;
+ padding-left: 10px;
+ margin-top: 4px;
+}
+
+.tableDate{
+  background-color: orange !important;
+}
+
+.contentBgColor{
+  background-color: #ADD8E6 !important;
+}
+
+.buttonView{
+  width: 100px;
+  height: 40px;
+  background-color: orange !important;
+  border: 1px solid orange !important;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.tableView {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.table-container {
+  width: 25%; /* Adjust the width as needed */
+  padding: 2px;
+  display: inline-block; /* Ensures that it is horizontally aligned */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .table-container {
+    width: 100%; /* Allow containers to take full width on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.spinnerView {
+  margin-left: 20px;
 }
